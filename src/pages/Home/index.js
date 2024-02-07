@@ -63,3 +63,19 @@ export default function Home() {
     </Container>
   );
 }
+
+// nativa do javascript
+fetch('http://localhost:3001/contacts')
+  .then((response) => {
+    console.log('response', response);
+  })
+  .catch((error) => {
+    console.log('erro', error);
+  });
+
+// SOP  -> Same Origin Policy - Política de mesma origem
+// CORS -> Cross-Origin Resource Sharing - Compartilhamento de recursos entre origens cruzadas
+// Origem: protocolo://dominio:porta
+
+//   Saída: http://localhost:3000
+// Destino: http://localhost:3001

@@ -28,5 +28,10 @@ export default function useErrors() {
   }
 
   // retornamos todas as funções que criamos, para que o componente que usar ela tenham acesso
-  return { setError, removeError, getErrorMessageByFieldName };
+  return {
+    setError,
+    removeError,
+    getErrorMessageByFieldName,
+    errors,
+  };
 }
